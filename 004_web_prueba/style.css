@@ -1,0 +1,94 @@
+/* script del archivo style.css
+es una copia del ejercicio de muestra en el archivo adjunto del curso de Python IBM de BeJob
+Sobre este script y los scripts de .html haré pruebas y modificaciones para practicar programación */
+
+/* La siguiente instrucción hace que al añadir margin o padding a los elementos
+    no crezcan más allá del borde de su contenedor */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* Cambio de estilo de letra*/
+    font-family: 'Roboto', sans-serif;
+    /* Quitamos el borde por defecto */
+    margin: 0;
+}
+
+/* Cambiamos el tamaño de las letras */
+h1{ font-family: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+/* Modificamos el estilo de las listas desordenadas
+    quitando los puntos que vienen por defecto*/
+
+ul{ list-style: none;}
+
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color: blueviolet;}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+/* Hasta aquí los estilos generales */
+
+/* Barra de navegación */
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+/* Fin barra de navegación */
+
